@@ -71,8 +71,8 @@ def Cost_function(inputs,W1,W2):
 def Gradient(inputs,W1,W2,learning_rate,n_iterations):
     for i in range(n_iterations):
         (W1,W2) = Gradient_Steps(inputs,W1,W2,learning_rate,B1,B2,dW1,dW2)
-        #if i%100 == 0:
-         #   print(Cost_function(inputs,W1,W2))
+        if i%100 == 0:
+            print(Cost_function(inputs,W1,W2))
     return (W1,W2)
 
 def predict(input,W1,W2):
