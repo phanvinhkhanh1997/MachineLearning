@@ -5,6 +5,7 @@ np.random.seed(1)
 
 X,y = datasets.make_moons(400,noise = 0.2)
 X_train = X[0:300]
+
 y_train = y[0:300]
 
 X_test = X[300:400]
