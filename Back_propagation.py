@@ -16,7 +16,7 @@ for i in range(len(y_train)):
     elif y_train[i]==0:
         plt.scatter(X_train[i,0],X_train[i,1],c='r',s=50)
 
-#plt.show()
+plt.show()
 W1 = 2 * np.random.randn(3,3) - 1
 W2 = 2 * np.random.randn(1,4)  - 1
 
